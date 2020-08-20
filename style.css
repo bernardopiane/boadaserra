@@ -1,0 +1,232 @@
+body {
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif */
+}
+
+ul {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+#navigation {
+    background-color: white;
+    color: #4C9929;
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: #FFF;
+    border-color: #00532C;
+    outline: 0px none;
+    box-shadow: 0px 0px 0px 0.2rem rgba(4, 153, 17, 0.25);
+}
+
+#user li {
+    font-size: 0.8em;
+    margin: 0.5em;
+}
+
+#user li:first-child {
+    padding-right: 1em;
+    border-right: 1px solid rgb(17, 206, 118);
+}
+
+a {
+    color: #4C9929;
+}
+
+.borderbottom {
+    border-bottom: 2px solid #D6E68C;
+}
+
+.economias h5,
+.economias p {
+    padding: 0px;
+    margin: 0px;
+}
+
+#filters {
+    background-color: #83B240;
+}
+
+#filter {
+    color: white;
+}
+
+.icon-item {
+    cursor: pointer;
+    /* padding: 5px; */
+}
+
+.icon-item span {
+    display: none;
+    /* position: absolute; */
+    /* visibility: hidden; */
+    /* opacity: 0; */
+    /* -webkit-transition: background-color 0.5s, visibility 0.1s, opacity 0.1s linear;
+    -moz-transition: background-color 0.5s, visibility 0.1s, opacity 0.1s linear;
+    -o-transition: background-color 0.5s, visibility 0.1s, opacity 0.1s linear;
+    transition: background-color 0.5s, visibility 0.1s, opacity 0.1s linear; */
+}
+
+/*
+
+.icon-item:hover span,
+.icon-item.hover span {
+    display: inline;
+    position: relative;
+    opacity: 1;
+    visibility: visible;
+} */
+
+/* Jquery smoother */
+
+/* Ofertas */
+
+#content {
+    background-color: #91C556;
+}
+
+.oferta {
+    /* min-height: 500px; */
+    background-color: white;
+    position: relative;
+}
+
+.top-text {
+    /* height: 20%; */
+}
+
+.oferta-img {
+    /* background: url("http://via.placeholder.com/650x350") center center; */
+    height: 70%;
+    position: relative;
+}
+
+.oferta-img img {
+    object-fit: cover;
+    max-width: 100%;
+    height: 100%;
+}
+
+.bottom-text {
+    /* height: ; */
+    /* min-height: 350px; */
+}
+
+.desconto {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 1em;
+    padding-right: 2em;
+    /* padding: 0.2em; */
+    position: absolute;
+    bottom: 20px;
+    left: -20px;
+    background-color: #4C9929;
+}
+
+.desconto:before {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    right: -2px;
+    top: 0px;
+    border-color: transparent #fff transparent transparent;
+}
+
+.desconto:after {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 0px;
+    top: 100%;
+    border-width: 5px 10px;
+    border-style: solid;
+    border-color: #135C3D #135C3D transparent transparent;
+}
+
+/*  */
+
+a:hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+.link {
+    transition: background-size .4s ease;
+    background: linear-gradient(to bottom, transparent 62%, #eef5ce 0) center center/0% 75% no-repeat;
+}
+
+.link:hover {
+    background-size: 100% 100%;
+}
+
+.link:active {
+    background-size: 80% 100%;
+}
+
+.footer {
+    border-top: 5px solid #476639;
+    background-color: #E5E6E7;
+}
+
+.share a {
+    color: rgba(0, 0, 0, 0.200);
+    font-size: 2em;
+    transition: color 0.5s ease;
+}
+
+#facebook:hover {
+    color: #3B5998;
+}
+
+#twitter:hover {
+    color: #1DA1F2;
+}
+
+#insta:hover {
+    color: #262626;
+}
+
+.link-area a {
+    padding-right: 5px;
+    border-right: 1px solid rgba(114, 124, 135, 0.2);
+}
+
+/* Scroll phone menu*/
+
+.scroll {
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.nav-item {
+    padding: 12px 16px 13px;
+}
+
+.nav-item:not(:last-child) {
+    border-right: 1px solid rgba(114, 124, 135, 0.2);
+}
+
+.scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.preço-full {
+    font-family: "Open Sans", Arial, Verdana, sans-serif;
+    font-size: 0.8em;
+    font-style: normal;
+    text-decoration: line-through;
+}
+
+.preço {
+    font-family: "Open Sans", Arial, Verdana, sans-serif;
+    font-size: 1.5em;
+    font-style: normal;
+}

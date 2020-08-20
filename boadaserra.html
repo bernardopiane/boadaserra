@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Boa da Serra</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section id="navigation">
+        <div class="container">
+            <div class="row p-1">
+                <div class="col-sm-4 col-md-4 align-self-center">
+                    <img src="logo-boadaserra.png" alt="" class="img-fluid">
+                </div>
+                <div class="col borderbottom p-3">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 align-self-center ">
+                            <div class="input-group">
+                                <input class="form-control py-2 border-right-0 border" type="search" value="O que você procura?" id="example-search-input">
+                                <span class="input-group-append">
+                                    <button class="btn btn-outline-secondary border-left-0 border" type="button">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col align-self-center">
+                            <div class="row">
+                                <div class="col align-self-center economias">
+                                    <h5>Econômetro</h5>
+                                    <p>
+                                        <small>
+                                            <small> Até agora economizamos juntos:</small>
+                                        </small>
+                                    </p>
+                                    <p>R$ 10.174.889,00</p>
+                                </div>
+                                <div class="col align-self-center">
+                                    <ul class="list-inline" id="user">
+                                        <li class="list-inline-item">
+                                            <a class="link" href="">Cadastre-se</a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="link" href="">Login</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pb-3 d-none d-sm-block">
+                <div class="col w-100 text-right">
+                    <ul class="list-inline" id="quicklinks">
+                        <li class="list-inline-item">
+                            <a class="link" href="">Ofertas do dia</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="link" href="">Mapa de ofertas</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="link" href="">Ofertas recentes</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="link" href="">Anuncie</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="link" href="">Ajuda</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Mobile Menu -->
+            <div class="row pb-3 d-block d-sm-none">
+                <div class="col w-100">
+                    <div class='example-one'>
+                        <header class='example-one-header scroll'>
+                            <nav class='vertical-align-middle'>
+                                <a class="nav-item link" href="">Ofertas do dia</a>
+                                <a class="nav-item link" href="">Mapa de ofertas</a>
+                                <a class="nav-item link" href="">Ofertas recentes</a>
+                                <a class="nav-item link" href="">Anuncie</a>
+                                <a class="nav-item link" href="">Ajuda</a>
+                            </nav>
+                        </header>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="filters">
+        <div class="container">
+            <div class="row p-2">
+                <div class="col align-self-center">
+                    <ul class="list-inline" id="filter">
+                        <li class="list-inline-item icon-item" ondblclick="filter(all)">
+                            <i class="fas fa-globe">
+                                <span class="pl-2">Todos</span>
+                            </i>
+                        </li>
+                        <li class="list-inline-item icon-item" ondblclick="filter()">
+                            <i class="far fa-smile">
+                                <span class="pl-2">Saúde e Estética</span>
+                            </i>
+                        </li>
+                        <li class="list-inline-item icon-item" ondblclick="filter()">
+                            <i class="fas fa-utensils">
+                                <span class="pl-2">Bares e Restaurantes</span>
+                            </i>
+                        </li>
+                        <li class="list-inline-item icon-item" ondblclick="filter()">
+                            <i class="fas fa-book">
+                                <span class="pl-2">Entretenimento</span>
+                            </i>
+                        </li>
+                        <li class="list-inline-item icon-item" ondblclick="filter()">
+                            <i class="fas fa-book">
+                                <span class="pl-2">Aulas e Cursos</span>
+                            </i>
+                        </li>
+                        <li class="list-inline-item icon-item" ondblclick="filter()">
+                            <i class="fas fa-car">
+                                <span class="pl-2">Veículos</span>
+                            </i>
+                        </li>
+                        <li class="list-inline-item icon-item" ondblclick="filter()">
+                            <i class="fas fa-birthday-cake">
+                                <span class="pl-2">Festas e Decorações</span>
+                            </i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="content">
+        <div class="container">
+            <div class="row pt-3">
+                <div class="col-sm-6 pt-2 pb-3">
+                    <div class="oferta">
+                        <!-- Imagem ta Object-fit Cover -->
+                        <div class="top-text p-2">
+                            Top text
+                        </div>
+                        <div class="oferta-img">
+                            <img src="http://via.placeholder.com/650x350" alt="" class="">
+                            <div class="desconto">
+                                <span>
+                                    50% OFF
+                                </span>
+                            </div>
+                        </div>
+                        <div class="bottom-text pt-4 p-2">
+                            <div class="row">
+                                <div class="col-md-7 col-xl-9">
+                                    <p class="preço-full">R$ 49,99</p>
+                                    <p class="preço">R$ 29,99</p>
+                                    <p>Vendidos: ??</p>
+                                </div>
+                                <div class="col-md-5 col-xl-3">
+                                    <button type="button" class="btn btn-primary btn-lg btn-block">Detalhes</button>
+                                    <button type="button" class="btn btn-secondary btn-lg btn-block">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 pt-2 pb-3">
+                    <div class="oferta">
+                        <div class="top-text p-2">
+                            Top text
+                        </div>
+                        <div class="oferta-img">
+                            <img src="http://via.placeholder.com/650x350" alt="" class="">
+                            <div class="desconto">
+                                <span>
+                                    50% OFF
+                                </span>
+                            </div>
+                        </div>
+                        <div class="bottom-text pt-4 p-2">
+                            <div class="row">
+                                <div class="col-md-7 col-xl-9 preços">
+                                    <p class="preço-full">R$ 49,99</p>
+                                    <p class="preço">R$ 29,99</p>
+                                    <p>Vendidos: ??</p>
+                                </div>
+                                <div class="col-md-5 col-xl-3">
+                                    <button type="button" class="btn btn-primary btn-lg btn-block">Detalhes</button>
+                                    <button type="button" class="btn btn-secondary btn-lg btn-block">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xl-4 pt-2 pb-3">
+                    <div class="oferta">
+                        <div class="top-text p-2">
+                            Top text
+                        </div>
+                        <div class="oferta-img">
+                            <img src="http://via.placeholder.com/650x350" alt="" class="">
+                            <div class="desconto">
+                                <span>
+                                    50% OFF
+                                </span>
+                            </div>
+                        </div>
+                        <div class="bottom-text pt-4 p-2">
+                            <div class="bottom-text pt-4 p-2">
+                                <div class="row">
+                                    <div class="col-md-6 col-xl-7">
+                                        <p class="preço-full">R$ 49,99</p>
+                                        <p class="preço">R$ 29,99</p>
+                                        <p>Vendidos: ??</p>
+                                    </div>
+                                    <div class="col-md-6 col-xl-5">
+                                        <button type="button" class="btn btn-primary btn-lg btn-block">Detalhes</button>
+                                        <button type="button" class="btn btn-secondary btn-lg btn-block">Comprar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xl-4 pt-2 pb-3">
+                    <div class="oferta">
+                        <div class="top-text p-2">
+                            Top text
+                        </div>
+                        <div class="oferta-img">
+                            <img src="http://via.placeholder.com/650x350" alt="" class="">
+                            <div class="desconto">
+                                <span>
+                                    50% OFF
+                                </span>
+                            </div>
+                        </div>
+                        <div class="bottom-text pt-4 p-2">
+                            <div class="bottom-text pt-4 p-2">
+                                <div class="row">
+                                    <div class="col-md-6 col-xl-7">
+                                        <p class="preço-full">R$ 49,99</p>
+                                        <p class="preço">R$ 29,99</p>
+                                        <p>Vendidos: ??</p>
+                                    </div>
+                                    <div class="col-md-6 col-xl-5">
+                                        <button type="button" class="btn btn-primary btn-lg btn-block">Detalhes</button>
+                                        <button type="button" class="btn btn-secondary btn-lg btn-block">Comprar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xl-4 pt-2 pb-3">
+                    <div class="oferta">
+                        <div class="top-text p-2">
+                            Top text
+                        </div>
+                        <div class="oferta-img">
+                            <img src="http://via.placeholder.com/650x350" alt="" class="">
+                            <div class="desconto">
+                                <span>
+                                    50% OFF
+                                </span>
+                            </div>
+                        </div>
+                        <div class="bottom-text pt-4 p-2">
+                            <div class="bottom-text pt-4 p-2">
+                                <div class="row">
+                                    <div class="col-md-6 col-xl-7">
+                                        <p class="preço-full">R$ 49,99</p>
+                                        <p class="preço">R$ 29,99</p>
+                                        <p>Vendidos: ??</p>
+                                    </div>
+                                    <div class="col-md-6 col-xl-5">
+                                        <button type="button" class="btn btn-primary btn-lg btn-block">Detalhes</button>
+                                        <button type="button" class="btn btn-secondary btn-lg btn-block">Comprar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-xl-4 pt-2 pb-3">
+                    <div class="oferta">
+                        <div class="top-text p-2">
+                            Top text
+                        </div>
+                        <div class="oferta-img">
+                            <img src="http://via.placeholder.com/650x350" alt="" class="">
+                            <div class="desconto">
+                                <span>
+                                    50% OFF
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="bottom-text pt-4 p-2">
+                            <div class="bottom-text pt-4 p-2">
+                                <div class="row">
+                                    <div class="col-md-6 col-xl-7">
+                                        <p class="preço-full">R$ 49,99</p>
+                                        <p class="preço">R$ 29,99</p>
+                                        <p>Vendidos: ??</p>
+                                    </div>
+                                    <div class="col-md-6 col-xl-5">
+                                        <button type="button" class="btn btn-primary btn-lg btn-block">Detalhes</button>
+                                        <button type="button" class="btn btn-secondary btn-lg btn-block">Comprar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="oferta col-sm-6">2</div>
+                <div class="oferta col-sm-4">3</div>
+                <div class="oferta col-sm-4">4</div>
+                <div class="oferta col-sm-4">5</div>
+                <div class="oferta col-sm-4">6</div> -->
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container pt-5">
+            <!-- Footer Desktop -->
+            <div class="row">
+                <div class="col">
+                    <div class="row d-none d-sm-flex">
+                        <div class="col-sm-6 col-md-3">
+                            <h5>Boa da Serra</h5>
+                            <ul>
+                                <li>
+                                    <a href="">Sobre a empresa</a>
+                                </li>
+                                <li>
+                                    <a href="">Mídia</a>
+                                </li>
+                                <li>
+                                    <a href="">Termos de uso</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <h5>Ofertas</h5>
+                            <ul>
+                                <li>
+                                    <a href="">Receba ofertas</a>
+                                </li>
+                                <li>
+                                    <a href="">Ofertas recentes</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <h5>Ajuda</h5>
+                            <ul>
+                                <li>
+                                    <a href="">Central de Ajuda</a>
+                                </li>
+                                <li>
+                                    <a href="">Dúvidas sobre cupons</a>
+                                </li>
+                                <li>
+                                    <a href="">Entre em contato</a>
+                                </li>
+                                <li>
+                                    <a href="">PROCON-RJ</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <h5>Parceiros</h5>
+                            <ul>
+                                <li>
+                                    <a href="">Nossos parceiros</a>
+                                </li>
+                                <li>
+                                    <a href="">Seja um parceiro</a>
+                                </li>
+                                <li>
+                                    <a href="">Sugira um novo</a>
+                                </li>
+                                <li>
+                                    <a href="">Portal do Parceiro</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Mobile Menu -->
+                    <div class="row d-block d-sm-none">
+                        <div class="col-sm-6 col-md-3 link-area">
+                            <h5>Boa da Serra</h5>
+                            <a href="">Sobre a empresa</a>
+                            <a href="">Mídia</a>
+                            <a href="">Termos de uso</a>
+                        </div>
+                        <div class="col-sm-6 col-md-3 link-area">
+                            <h5>Ofertas</h5>
+                            <a href="">Receba ofertas</a>
+                            <a href="">Ofertas recentes</a>
+
+                        </div>
+                        <div class="col-sm-6 col-md-3 link-area">
+                            <h5>Ajuda</h5>
+
+                            <a href="">Central de Ajuda</a>
+
+                            <a href="">Dúvidas sobre cupons</a>
+
+                            <a href="">Entre em contato</a>
+
+                            <a href="">PROCON-RJ</a>
+
+                        </div>
+                        <div class="col-sm-6 col-md-3 link-area">
+                            <h5>Parceiros</h5>
+
+                            <a href="">Nossos parceiros</a>
+
+                            <a href="">Seja um parceiro</a>
+
+                            <a href="">Sugira um novo</a>
+
+                            <a href="">Portal do Parceiro</a>
+
+                        </div>
+                    </div>
+                    <div class="row pt-3">
+                        <div class="col share">
+                            <h5>Redes Sociais</h5>
+                            <a id="facebook" href="">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a id="twitter" href="">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a id="insta" href="">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                        <div class="col">
+                            <h5>Formas de Pagamento</h5>
+                            <p></p>Lista com as bandeiras dos cartões
+                            <p>
+                                <small>Ou compre diretamente em nosso escritório, com pagamento em dinheiro ou Cartão de Crédito.
+                                    <br> De Segunda a Sexta de 9h às 18h.</small>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-3">Social Area - Parte com integração do FB
+                    < Pegar a parada de ligar o FB/de compartilhar -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
